@@ -17,15 +17,14 @@ const todoList = [
     
   ];
   
-function TodoList () {
+function TodoList ({ todoList }) {
     return (
-        <ul>
+      <ul>
         {todoList.map((item) => (
-          <TodoListItem key={item.id} item={item} />
+        <TodoListItem key={item.id} item={item} />
         ))}
-        </ul>
-
-    )
+      </ul>
+  )
 }
 
 export default TodoList;
