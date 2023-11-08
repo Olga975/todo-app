@@ -13,11 +13,11 @@ function AddTodoForm({ onAddTodo }) {
         console.log(todoTitle);
         setTodoTitle('');
     }
-
+    
 
     function handleTitleChange(event) {
         const newTodoTitle = event.target.value;
-        setTodoTitle(newTodoTitle);
+        setTodoTitle(event.target.value);
     }
 
 
